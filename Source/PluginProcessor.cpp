@@ -95,6 +95,7 @@ void TSPedalAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBloc
 {
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
+    tone.setSampleRate(sampleRate);
 }
 
 void TSPedalAudioProcessor::releaseResources()
