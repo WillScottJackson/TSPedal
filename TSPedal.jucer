@@ -5,6 +5,14 @@
               displaySplashScreen="1">
   <MAINGROUP id="n2R6dq" name="TSPedal">
     <GROUP id="{7DD324C5-240B-C3C1-38D5-5F1426B87186}" name="Source">
+      <GROUP id="{06F4B7CD-210F-90C5-4BE9-2BF207DC7BD6}" name="Models">
+        <GROUP id="{16A33614-C091-19F7-6A84-6FB7662E2B9D}" name="TS808">
+          <FILE id="OaAYZp" name="TS808ToneSection.cpp" compile="1" resource="0"
+                file="Source/Models/TS808/TS808ToneSection.cpp"/>
+          <FILE id="Sz2BAM" name="TS808ToneSection.h" compile="0" resource="0"
+                file="Source/Models/TS808/TS808ToneSection.h"/>
+        </GROUP>
+      </GROUP>
       <FILE id="fgWX4H" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="AdkEID" name="PluginProcessor.h" compile="0" resource="0"

@@ -369,4 +369,5 @@ void PedalComponent::sliderValueChanged(Slider * slider){
     if (slider == &knobs[2]){
         processor.outputValue = knobs[2].getValue();
     }
+    processor.dialsChanged = true;
 }

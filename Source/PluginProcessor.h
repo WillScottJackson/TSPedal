@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-
+#include "Models/TS808/TS808ToneSection.h"
 //==============================================================================
 /**
 */
@@ -29,7 +29,7 @@ public:
    #endif
 
     void processBlock (juce::AudioBuffer<float>&, juce::MidiBuffer&) override;
-
+    TS808::ToneAndVolume tone;
     //==============================================================================
     juce::AudioProcessorEditor* createEditor() override;
     bool hasEditor() const override;
@@ -56,8 +56,10 @@ public:
     float driveValue  = 0.f;
     float toneValue   = 0.f;
     float outputValue = 0.f;
+    bool dialsChanged = false;
     bool  effectOn = true;
 private:
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TSPedalAudioProcessor)
 };
